@@ -1,5 +1,3 @@
-https://www.jdoodle.com/online-java-compiler
-
 import java.util.*;
 import java.lang.*;
 import java.io.*;
