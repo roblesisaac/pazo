@@ -9,9 +9,9 @@ public class MyClass {
       
       String playgame = "y";
       while(playgame.equals("y")) {
-        System.out.println("Guess a number between 1 and 10.");
         int count = 1;
         count = 2;
+        playgame = "n";
       } 
       
       System.out.println("Thanks for playing!");
