@@ -1,4 +1,4 @@
-import java.util.*;
+ import java.util.*;
 import java.lang.*;
 import java.io.*;
  
@@ -7,7 +7,7 @@ public class MyClass {
         
         String message = "";
         for(int count=65; count<91; count++) {
-          message += (char)(count);
+          message += (char)(count); // same as message = message +(char)(count)
           System.out.println(message);
         }
       
