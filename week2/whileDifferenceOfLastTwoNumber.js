@@ -10,7 +10,7 @@ public class MyClass {
         int previous = scan.nextInt();
         System.out.println("Pick a number.");
         int current = scan.nextInt();
-        while(Math.abs(current-previous) <= 10) {
+        while(Math.abs(current-previous) < 11) {
             System.out.println("Pick a number.");
             previous = current;
             current = scan.nextInt();
