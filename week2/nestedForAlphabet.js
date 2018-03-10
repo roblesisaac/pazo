@@ -4,7 +4,6 @@ import java.io.*;
  
 public class MyClass {
     public static void main(String args[]) {
-        Random rnd = new Random();
         
         String message = "";
         for(int count=65; count<91; count++) {
