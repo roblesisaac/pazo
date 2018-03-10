@@ -1,4 +1,4 @@
- import java.util.*;
+  import java.util.*;
 import java.lang.*;
 import java.io.*;
  
@@ -11,7 +11,7 @@ public class MyClass {
         while(Math.abs(current-previous) <= 10) {
             System.out.println("Pick a number.");
             previous = current; // storing/saving last current number in the previous variable
-            current = scan.nextInt();
+            current = scan.nextInt(); // resets current to whatever value user inputs
         }
         System.out.println("The difference between the last two numbers enter is greater than 10.");
       
