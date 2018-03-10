@@ -5,7 +5,6 @@ import java.io.*;
 public class MyClass {
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
-        Random rnd = new Random();
       
         int previous = 1;
         int current = 2;
