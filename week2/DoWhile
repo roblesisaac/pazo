@@ -1,0 +1,46 @@
+package dowhilepracticeexam2;
+import java.util.Scanner;
+import java.util.Random;
+
+/**
+ *
+ * @author Ryan
+ */
+public class DoWhilePracticeExam2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        Random rnd = new Random();
+        
+        String str ="";
+        
+        int min = 65;
+        int max = 90;
+        
+        System.out.println("Guess the secret uppercase letter");
+        
+        
+        do{
+             System.out.println("Guess the secret uppercase letter");
+             char r = (char)(rnd.nextInt((max-min)+1) + min);
+             int count = 1;
+             int guess = in.nextInt();
+             int num = rnd.nextInt(90) +1;
+             count++;
+        
+        } while(guess != num || guess < num); { 
+        System.out.println("Sorry you guessed the wrong letter, the secret letter preceeds the letter you guessed. Guess again.");
+        guess = in.nextInt();
+    }
+        
+        
+      
+      
+                
+               
+    }
+    
+}
