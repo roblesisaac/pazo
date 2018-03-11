@@ -1,3 +1,4 @@
+ */
 package dowhilepracticeexam2;
 import java.util.Scanner;
 import java.util.Random;
@@ -32,15 +33,14 @@ public class DoWhilePracticeExam2 {
              count++;
         
         } while(guess != num || guess < num); { 
-        System.out.println("Sorry you guessed the wrong letter, the secret letter preceeds the letter you guessed. Guess again.");
+        System.out.println("Sorry you guessed the wrong letter, the secret letter proceeds the letter you guessed. Guess again.");
         guess = in.nextInt();
-    }
         
+        while(guess !=num || guess > num); {
+            System.out.println("Sorry you guessed the wrong letter, the secret letter preceeds the letter you guessed. Guess again.");
+        guess = in.nextInt();
+            
+            
+        }
         
-      
-      
-                
-               
-    }
-    
-}
+           
