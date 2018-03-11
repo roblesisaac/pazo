@@ -26,7 +26,7 @@ public class DoWhilePracticeExam2 {
         do {
              System.out.println("Sorry you guessed the wrong letter, the secret letter preceeds the letter you guessed. Guess again.");
              guess = in.nextLine();
-        } while(!guess.equals(guess));
+        } while(guess.equals(rNumber));
         
         
       
