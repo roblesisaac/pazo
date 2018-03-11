@@ -21,6 +21,8 @@ public class DoWhilePracticeExam2 {
         int rNumber = rnd.nextInt((max-min)+1) + min;
         char rChar = (char)(rNumber); 
         
+        System.out.println("Secret letter is " + rChar);
+        
         System.out.println("Guess the secret uppercase letter");
         String guess = in.nextLine();
         do {
