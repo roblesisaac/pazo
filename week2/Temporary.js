@@ -22,10 +22,10 @@ public class DoWhilePracticeExam2 {
         char rChar = (char)(rNumber); 
         
         System.out.println("Guess the secret uppercase letter");
-        String guess = in.nextChar();
+        String guess = in.nextLine();
         do {
              System.out.println("Sorry you guessed the wrong letter, the secret letter preceeds the letter you guessed. Guess again.");
-             guess = in.nextChar();
+             guess = in.nextLine();
         } while(!guess.equals(guess));
         
         
