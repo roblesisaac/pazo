@@ -15,9 +15,10 @@ Make sure you prime your loop properly.
         
         while(i < answer){
             int num = rnd.nextInt(999) + 1;
-            sum += num;            
+            sum += num; 
+            int x = sum / i;
         }
-        
+        System.out.println("The aver is " + "x");
         // create int equal to sum divided by i to get average
 
         // print the average number
