@@ -1,3 +1,5 @@
+public class MyClass {
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in); // creates a scanner isntacne
                 
         System.out.println("Enter some text.");
@@ -11,3 +13,6 @@
             }
         }
         System.out.println("Your text has "+ spaces +" spaces in it");
+    }
+
+}
