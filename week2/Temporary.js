@@ -28,6 +28,7 @@ public class MyClass {
           System.out.println("Your guess came after the secret letter, try guessing a letter that comes before.")
          } else {
           System.out.prtintln("Your guess comes before the secret letter, try guessing a latter letter."
+                              }
 
         } while(guess != rChar);        
         System.out.println("You guessed correctly!");
