@@ -1,33 +1,13 @@
-Scanner in = new Scanner(System.in);
-        
+        Scanner in = new Scanner(System.in); // creates a scanner isntacne
+                
         System.out.println("Enter some text.");
-        
         String text = in.nextLine();
-       
-        int spaces = 0;        
+        int spaces = 0;
         
-       for( int i =0; i < text.length(); i++ ){
-           char c = text.charAt(i);
-           
-           if(c == ' '){
-        spaces++;
-       }
-    
-    }
-}
-
-/*Using a for loop count the number of spaces that appear in a string
-Example:
-Enter some text
-this is a test
-Your text has 3 spaces in it
-tset a si siht
-Please not that you can find the length of a string by using the length function
-string str = "hello";
-cout << str.length();   // prints 5
-Also you can get a character in a string by providing an index to the at functio
-string str = "hello";
-cout << str.at(2) << endl;  // outputs the character l
-finally a space character is nothing more than empty quotes with a space in between:
-char ch = ' ';
- 
+        for( int i=0; i < text.length(); i++ ) {
+            char c = text.charAt(i);
+            if(c == ' ') {
+                spaces++;
+            }
+        }
+        System.out.println("Your text has "+ spaces +" spaces in it");
