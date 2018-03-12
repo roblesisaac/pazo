@@ -4,9 +4,7 @@ Scanner in = new Scanner(System.in);
         
         String text = in.nextLine();
        
-       
-       char ch = ' ';
-       count ch = 0;
+        int spaces = 0;
         
         
        for( int i =0; i < text.length(); i++ ){
