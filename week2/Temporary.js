@@ -1,4 +1,4 @@
-import java.util.*;
+ifimport java.util.*;
 import java.lang.*;
 import java.io.*;
  
@@ -25,7 +25,7 @@ public class MyClass {
            x = guess;
          if(x > rNumber ){
           System.out.println("Your guess came after the secret letter, try guessing a letter that comes before.");
-         } else {
+         } else if(x != rNumber){
           System.out.println("Your guess comes before the secret letter, try guessing a latter letter.");
                               }
 
