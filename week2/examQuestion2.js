@@ -19,10 +19,8 @@ Make sure you prime your loop properly.
            
         }
            int x = sum / i;
-          System.out.println("The aver is " + "x");
-        // create int equal to sum divided by i to get average
-
-        // print the average number
+          System.out.println("The average is " + x);
+        
         
     }
     
