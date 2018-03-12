@@ -4,12 +4,11 @@ Scanner in = new Scanner(System.in);
         
         String text = in.nextLine();
        
-        int spaces = 0;
-        
+        int spaces = 0;        
         
        for( int i =0; i < text.length(); i++ ){
-       char c = text.charAt(i);
-    }
+           char c = text.charAt(i);
+       }
     
     }
 }
