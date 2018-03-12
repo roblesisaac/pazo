@@ -12,12 +12,14 @@ public class MyClass {
         int rNumber = rnd.nextInt((max-min)+1) + min;
         String rChar = Character.toString((char)(rNumber));
 
-        System.out.println("Guess the secret uppercase letter (it's " + rChar + ")");
-
-        String guess;
+        String guess = "";
 
         do { 
-             System.out.println("Sorry you guessed the wrong letter, the secret letter preceeds the letter you guessed. Guess again.");
+            if(guess.equals("")) {
+                System.out.println("Guess the secret uppercase letter (it's " + rChar + ")"); 
+            } else {
+                System.out.println("Sorry you guessed the wrong letter, the secret letter preceeds the letter you guessed. Guess again.");   
+            };
              guess = in.nextLine();
 
         } while(!guess.equals(rChar));        
