@@ -14,10 +14,9 @@ public class MyClass {
 
         System.out.println("Guess the secret uppercase letter (it's " + rChar + ")");
 
-        String guess = in.nextLine();
+        String guess;
 
-        do {
-             System.out.println(guess.equals(rChar)); 
+        do { 
              System.out.println("Sorry you guessed the wrong letter, the secret letter preceeds the letter you guessed. Guess again.");
              guess = in.nextLine();
 
