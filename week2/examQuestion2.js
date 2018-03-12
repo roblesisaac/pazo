@@ -7,8 +7,6 @@ Make sure you prime your loop properly.
  Scanner in = new Scanner (System.in);
         Random rnd = new Random();
         
-        
-        
         System.out.println("Pick a number between 1 and 1000");
        
         int answer = in.nextInt();
@@ -16,13 +14,13 @@ Make sure you prime your loop properly.
         int sum = 0;
         
         while(i <answer ){
-            int num =rnd.nextInt(999) + 1;
-            sum+=num;            
+            int num = rnd.nextInt(999) + 1;
+            sum += num;            
         }
         
         // create int equal to sum divided by i to get average
 
-        // print the average
+        // print the average number
         
     }
     
