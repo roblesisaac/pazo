@@ -8,7 +8,9 @@ Scanner in = new Scanner(System.in);
         
        for( int i =0; i < text.length(); i++ ){
            char c = text.charAt(i);
-           // if c equals space add 1 to spaces
+           
+               if( c ='';){
+        spaces++;
        }
     
     }
