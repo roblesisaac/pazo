@@ -10,7 +10,7 @@ public class MyClass {
         int min = 65;
         int max = 90;
         int rNumber = rnd.nextInt((max-min)+1) + min;
-        char rChar = (char)(rNumber);
+        String rChar = Character.toString((char)(rNumber));
 
         System.out.println("Guess the secret uppercase letter (it's " + rChar + ")");
 
