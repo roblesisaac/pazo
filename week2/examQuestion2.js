@@ -3,15 +3,19 @@ Using a while loop generate the sum and compute the average of random numbers 
 generated random number matches the number input by the user. Do not include this number as part of your sum. 
 Make sure you prime your loop properly.
 
-  Scanner in = new Scanner (System.in);
+ Scanner in = new Scanner (System.in);
         Random rnd = new Random();
+        
+        
         
         System.out.println("Pick a number between 1 and 1000");
        
         int answer = in.nextInt();
         int i = 0;
+        int sum = 0;
         
-        while(i < answer){
+        while(i <answer ){
+            int num =rnd.nextInt(1000) + 1;
             
         }
         
