@@ -1,3 +1,4 @@
+
 Write a program that will ask the user for a number between 1 and 1000. 
 Using a while loop generate the sum and compute the average of random numbers in the range of 1 to 1000 until a 
 generated random number matches the number input by the user. Do not include this number as part of your sum. 
@@ -16,6 +17,7 @@ Make sure you prime your loop properly.
         
         while(i <answer ){
             int num =rnd.nextInt(999) + 1;
+         sum+=num;
             
         }
         
