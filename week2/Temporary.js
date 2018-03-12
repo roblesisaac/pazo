@@ -16,12 +16,12 @@ public class MyClass {
 
         String guess = in.nextLine();
 
-        while(!guess.equals(rChar)) {
-            System.out.println(guess.equals(rChar)); 
-            System.out.println("Sorry you guessed the wrong letter, the secret letter preceeds the letter you guessed. Guess again.");
-            guess = in.nextLine();            
-        };
-        
+        do {
+             System.out.println(guess.equals(rChar)); 
+             System.out.println("Sorry you guessed the wrong letter, the secret letter preceeds the letter you guessed. Guess again.");
+             guess = in.nextLine();
+
+        } while(!guess.equals(rChar));        
         System.out.println("You guessed correctly!");
     }
 
