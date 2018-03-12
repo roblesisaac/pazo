@@ -1,4 +1,4 @@
-he do while loop should not be your first choice when writing an iterative solution. As a general rule, if you can solve the problem reasonably with a while loop then you should do that. With that being said, there is no reason why we can't practice it a little bit.
+ he do while loop should not be your first choice when writing an iterative solution. As a general rule, if you can solve the problem reasonably with a while loop then you should do that. With that being said, there is no reason why we can't practice it a little bit.
 The factorial of a non-negative numbers is notated n!. Given a number like 5. The factorial is 5 * 4 * 3 * 2 * 1 which equals 120
 Write a program that asks the user to input a non-negative number and then computes the factorial for this number. Use a do-while loop to solve the problem.
 
@@ -11,7 +11,7 @@ public class MyClass {
         int factorial = 1;
         int i = 1;
         do {
-          factorial *= i;
+          factorial *= i; // factorial = factorial * i
           i++;
         } while(i <= num);
        
