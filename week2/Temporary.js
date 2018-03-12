@@ -9,10 +9,10 @@ public class MyClass {
     Random rnd = new Random(); // creates a random instance
     int min = 65; // is A in ascii
     int max = 90; // is Z in ascii
-    int rNumber = rnd.nextInt((max - min) + 1) + min;
-    char rChar = (char)(rNumber);
-    char guess = (char)(60);
-    int x = guess;
+    int rNumber = rnd.nextInt((max - min) + 1) + min; // how we get our random number
+    char rChar = (char)(rNumber); // generating character using our random number
+    char guess = (char)(60); // defualting the guess value outside of paramaters, if random is set to 65 could terminate
+    int x = guess; // defined numeric value of char guess
 
 
     do {
