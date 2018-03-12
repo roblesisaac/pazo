@@ -13,7 +13,7 @@ Make sure you prime your loop properly.
         int i = 0;
         int sum = 0;
         
-        while(i <answer ){
+        while(i < answer){
             int num = rnd.nextInt(999) + 1;
             sum += num;            
         }
