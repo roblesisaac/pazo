@@ -7,13 +7,10 @@ public class MyClass {
         Scanner in = new Scanner(System.in); // creates a scanner isntacne
 
         Random rnd = new Random(); // creates a random instance
-
-        
-
         int min = 65;
         int max = 90;
         int rNumber = rnd.nextInt((max-min)+1) + min;
-        char rChar = (char)(rNumber); 
+        char rChar = (char)(rNumber);
 
         System.out.println("Guess the secret uppercase letter (it's " + rChar + ")");
 
