@@ -9,10 +9,9 @@ Write a program that asks the user to input a non-negative number and then compu
         
         int num = in.nextInt();
         
-        do(){
+        do {
         
-    }while()
-        
+        } while();        
     
     }
     
