@@ -1,4 +1,4 @@
-import java.util.*;
+!import java.util.*;
 import java.lang.*;
 import java.io.*;
  
@@ -14,7 +14,7 @@ public class MyClass {
         char guess = (char)(60);
 
         do { 
-            if(guess == (char)(60)) {
+            if(guess != (rChar)) {
                 System.out.println("Guess the secret uppercase letter (it's " + rChar + ")"); 
             } else {
                 System.out.println("Sorry you guessed the wrong letter, the secret letter preceeds the letter you guessed. Guess again.");   
