@@ -10,20 +10,17 @@ public class MyClass {
         int min = 65;
         int max = 90;
         int rNumber = rnd.nextInt((max-min)+1) + min;
-        String rChar = Character.toString((char)(rNumber));String guess = "";
-        
-        char c = (char)(65);
-        int x=c;
-        System.out.println(c + " " + x);
+        char rChar = (char)(rNumber);
+        char guess = (char)(60);
 
         do { 
-            if(guess.equals("")) {
+            if(guess == (char)(60)) {
                 System.out.println("Guess the secret uppercase letter (it's " + rChar + ")"); 
             } else {
                 System.out.println("Sorry you guessed the wrong letter, the secret letter preceeds the letter you guessed. Guess again.");   
             };
-            guess = in.nextLine();
-        } while(!guess.equals(rChar));        
+            guess = in.next().charAt(0);
+        } while(guess != rChar);        
         System.out.println("You guessed correctly!");
     }
 
