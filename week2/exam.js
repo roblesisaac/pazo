@@ -1,15 +1,18 @@
-*
-
-Scanner in = new Scanner(System.in);
-        
+public class MyClass {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in); // creates a scanner isntacne
+                
         System.out.println("Enter some text.");
         
         String text = in.nextLine();
         
         
-       for( int i =0; i < text.length(); i++ );{
-       char c = text.charAt(i);
+       for( int i =0; i < text.length(); i++ ) {
+            char c = text.charAt(i);
+        }
     }
+
+}
 
 /*Using a for loop count the number of spaces that appear in a string
 Example:
