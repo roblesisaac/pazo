@@ -20,7 +20,9 @@ public class MyClass {
                 System.out.println("Sorry you guessed the wrong letter, the secret letter preceeds the letter you guessed. Guess again.");   
             }
             guess = in.next().charAt(0); // how to get char from next line (input)
-            int = guess;
+           int x = Character.getNumericValue(guess.charAt(0));
+            System.out.println("x=" + x);
+
         } while(guess != rChar);        
         System.out.println("You guessed correctly!");
     }
