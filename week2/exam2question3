@@ -8,7 +8,7 @@ Write a program that asks the user to input a non-negative number and then compu
         System.out.println("Please enter a non-negative number, greater than zero.");
         
         int num = in.nextInt();
-        int fact = n!;
+        int fact = 1;
         int count = 1;
         do{
             
