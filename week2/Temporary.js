@@ -24,7 +24,7 @@ public class MyClass {
             }
             guess = in.next().charAt(0); // how to get char from next line (input)
            x = guess;
-         if(x > rNumber && != rNumber){
+         if(x > rNumber ){
           System.out.println("Your guess came after the secret letter, try guessing a letter that comes before.")
          } else {
           System.out.prtintln("Your guess comes before the secret letter, try guessing a latter letter."
