@@ -15,7 +15,7 @@ Make sure you prime your loop properly.
         int sum = 0;
         
         while(i <answer ){
-            int num =rnd.nextInt(1000) + 1;
+            int num =rnd.nextInt(999) + 1;
             
         }
         
