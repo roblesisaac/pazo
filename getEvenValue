@@ -1,0 +1,42 @@
+/*having a little trouble with this one pazo */
+
+/*
+ *Ryan Santos
+ID:0266872
+3/4/2018
+Despcription: Generationg random numbers/characters.
+ */
+package journal4bevenvalue;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ryan
+ */
+public class Journal4BEvenValue {
+    
+    Scanner in = new Scanner(System.in);
+    
+    public int getEvenValue() {
+        
+        System.out.println("Enter a number ");
+        int val;
+        val = in.nextInt();
+        
+        if( (val % 2) == 0) {
+        
+    }
+        return val;
+    }    
+    
+
+    public static void main(String[] args) {
+        
+        Journal4BEvenValue console = new Journal4BEvenValue();
+        int x = console.getEvenValue();
+        System.out.println(" Your value " + x + " is an even value.");
+        
+    }
+    
+}
