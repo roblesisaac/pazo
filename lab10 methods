@@ -1,0 +1,15 @@
+In lab 9 you created a calculator that output among other things the sine, cosine, and tangent of a number in radians. For this assignment I want you to convert the input value to degrees also.
+Required:
+Create a method called rad2deg that takes as an argument the value in radians to convert. When the sine, cosine, and tangent functions are selected you will output the value in both radians and degrees. You must use the rad2deg method to convert the value.
+Converting
+The formula for converting radians to degrees is:
+degrees = radians * 180 / PI
+Using math constants
+As most of us know PI is a constant value that is 3.14159 or larger depending on how much precision is required. The Math class has a static final PI defined within it which makes it nice for you. You simply use Math.PI
+degrees = radians * 180 / Math.PI;
+Please note that degrees and radians are variables that you must define. Copying the above into your code will not work without declaring and initializing degrees and radians.
+What not to do
+Using any of the following will drop your grade for this assignment by 70%
+global variables
+console out in rad2deg method
+console in inside the rad2deg method
