@@ -1,0 +1,42 @@
+package journal4asimplemethods;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ryan
+ */
+public class Journal4aSimpleMethods {
+    
+    public void printName() {
+        Scanner in = new Scanner(System.in);
+         int input = in.nextInt();
+        
+        for(int i=0 ; i < input ; i++) {
+            
+            System.out.println("Ryan");
+            }
+    }
+    
+    public void sayHello() {
+        
+        this.printName();
+        
+    }
+   
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+        int input = in.nextInt();
+        
+        System.out.println("Enter a number");
+        input = in.nextInt();
+        
+        
+        
+       Journal4aSimpleMethods c = new Journal4aSimpleMethods();
+        c.sayHello();
+    }
+    
+    
+}
