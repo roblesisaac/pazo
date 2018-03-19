@@ -1,3 +1,12 @@
+/* Figured it out pazo */
+
+/*
+ Ryan Santos
+ID: 0266872
+3/18/18
+Description: creating a simple method with a for loop.
+ 
+ */
 package journal4asimplemethods;
 
 import java.util.Scanner;
@@ -9,10 +18,13 @@ import java.util.Scanner;
 public class Journal4aSimpleMethods {
     
     public void printName() {
-        Scanner in = new Scanner(System.in);
-         int input = in.nextInt();
         
-        for(int i=0 ; i < input ; i++) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter a number");
+        
+        int input = in.nextInt();
+                 
+        for(int i=1 ; i <= input ; i++ ) {
             
             System.out.println("Ryan");
             }
@@ -25,18 +37,12 @@ public class Journal4aSimpleMethods {
     }
    
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        
-        int input = in.nextInt();
-        
-        System.out.println("Enter a number");
-        input = in.nextInt();
         
         
-        
-       Journal4aSimpleMethods c = new Journal4aSimpleMethods();
-        c.sayHello();
+      Journal4aSimpleMethods c = new Journal4aSimpleMethods();
+        c.printName();
     }
     
     
 }
+
