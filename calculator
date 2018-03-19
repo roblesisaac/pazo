@@ -1,0 +1,81 @@
+Simple Math Calculator
+In this assignment you are going to create a math calculator that will compute the following functions:
+Sine
+Cosine
+Tangent
+Square Root
+Natural Log
+Your program will take a character which represents the function to perform and the value to perform the function on using the following specification:
+S - sine
+C - Cosine
+T - Tangent
+R - Square Root
+N - Natural Log
+X - exit the program
+The numeric input for your program should be of type double.  The program will continue to take input and calculate until the 'X' character is input for the function.
+Your input should be in the following form
+T 32.0
+This should yield the tangent of 32.0 radians.
+Parsing The Input
+Inputting the expression the form above is going to require a little bit of parsing. To begin with you should take in the input as a String. Once you have the input you can parse it out. What you are parsing is the first character and then the double value that goes along with it.
+Suppose that the String variable to hold the input is called input. I can then get the first character by using the charAt method:
+char operation = input.charAt(0);
+That is pretty simple but getting the number next to it is a little more complex but not that much more. You are going to have to use the substring method to get the number:
+String sValue = input.substring(2);
+This says get the rest of the String starting at character to. This will all be put into the new String called sValue.
+We are not quite finished here. What you have to this point is the operation and the value as a String. This means that the value needs to be converted from a String to an actual number. Just so you know this is a common occurrence in Java.  Take the String
+String num = "12.34";
+The String num actually consists of 5 characters that represent a double. These characters have the value 49 50 46 51 52 respectfully. You may notice that you can subtract 48 off each of the number characters to get the actual number. If you are wondering why characters are actually numbers you need to go back and review the data types section. Pay close attention to the ASCII table.
+Java has build in complex types the will do the conversion for you. The class you need here is the Double class. You should also know that for each primitive type there is a corresponding complex type that simply begins with an upper case character.
+To convert the String to an actual number you would do this:
+double dNum = Double.parseDouble(num);
+Now dNum holds the value 12.34 not "12.34".
+Getting back to parsing the input:
+double dValue = double.parseDouble(sValue);
+Now operation has the character that represents the operation and dValue contains the value to operate on.
+Make sure you switch on the operation.
+Upper Case
+You may want to convert the operation character to upper case in the switch statement so that you can handle bother upper and lower case characters without much bother. You want to use the Character class to do this:
+switch(Character.toUpperCase(operation))
+Please Note:
+We are not providing any error checking on the input at this time so if the input is not in the correct format your program is likely to crash. At this point we are going to assume that the user will input the expression correctly.
+Math Operations
+Java has a static class called Math and it contains all of the methods you need to accomplish your task. A static class is one that you do not have to use the new operator on it to use it. For instance you would not do this
+Math m = new Math();
+Instead you simply call the methods using the . operator:
+ 
+Description
+Usage
+double Math.sin(double val);
+double x = Math.sin(32.0);
+double Math.cos(double val);
+double x = Math.cos(40.0);
+double Math.tan(double val);
+double x =Math.tan(20.2);
+double Math.sqrt(double val);
+double x = Math.sqrt(9.0);
+double Math.log(double val);
+double x = Math.log(10);
+ 
+ 
+Here is an example program that demonstrates the use of the sin function:
+public class Lab9
+{
+public statc void main(String[] args)
+{
+     
+     Scanner in = new Scanner(System.in);
+      double val;
+      double theSine;
+
+      System.out.println( "Enter a value ");
+      val  = in.nextDouble();
+      theSine = Math.sin(val);
+
+     System.out.println( "The sine in radians is " + theSine);
+}
+}
+Notice that the method produces the sine of the value provided.  Inside the parentheses you supply the value you want the sine for. This value is called an argument or parameter for the method. Also notice you simply assign what the method produces to a variable.
+ 
+Required:
+You are not allowed to use a do while loop for this program. It would be best to use a while loop in conjunction with a switch statement. You should review the information on primed loops
