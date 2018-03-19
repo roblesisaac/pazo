@@ -1,5 +1,3 @@
-/*having a little trouble with this one pazo */
-
 /*
  *Ryan Santos
 ID:0266872
@@ -25,9 +23,13 @@ public class Journal4BEvenValue {
         val = in.nextInt();
         
         if( (val % 2) == 0) {
+            return val;
         
     }
-        return val;
+        else {
+            return getEvenValue();
+        }
+        
     }    
     
 
