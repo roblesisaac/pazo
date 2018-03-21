@@ -1,0 +1,11 @@
+Write overloaded sumNumber method, one of which takes a single 3-digit integer, the second which takes two 3-digit integers. These methods should return the sum of the individual numbers. For instance if the method is given a value like:
+123
+The method should return 6 because 1 + 2 + 3 = 6.
+One of the nice things about overloaded methods is that many times one of the methods solves a smaller version of the larger problem. That is exactly the case for this assignment. Since the sumNumber method solves the problem for one number you should use it to solve the problem for two numbers. What I am getting at here is that you should avoid duplicating the code in each one of these methods. You should simply call one function from within another.
+What not to do
+Using any of the following will drop your grade for this assignment by 70%
+Convert the number to a string then back to a number again. 
+Field variables
+Console out in sumNumber method
+Console in int sumNumber function
+You will also get marked down for duplicating code and failing to use the smaller funciton to solve the problem of the larger one.
