@@ -17,15 +17,18 @@ public class Lab11 {
 
     System.out.println("Enter two uppercase leters.");
 
-    String s = in .nextLine();
+    String s = in.nextLine();
     // int x = Integer.parseInt(s); // converts string into int
-    letter1 = in .nextLine();
-    letter2 = in .nextLine();
+    letter1 = in.nextLine(); // for the letters you want to use s.charAt()
+   // i found this on lines 27-28 on instructions
+    letter2 = in.nextLine();
+   // to convert letter1 try int l1 = (int) letter1
+   // i found this on lines 17-20 on instructions
 
-    for (;;)
+    for (;;) // get rid of this for now so function will execute
 
-
-      return (char)(letter1 + letter2); // sum of ascii letters
+    return (char)(letter1 + letter2); // sum of ascii letters
+   // instead of returning this try returning the integers from the converted letters (line 25) to see if your on the right track
 
   }
   public static void main(String[] args) {
