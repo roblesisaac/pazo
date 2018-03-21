@@ -1,0 +1,31 @@
+Write a method called sumConsonants that will take as arguments two upper case letters. Your function should return a sum of all the ascii values of the consonants between the starting character and the ending character. Your main method should pass two values to the function and output the sum of all the consonant character values including the first and the last.
+Required:
+Your method must allow for either argument to be larger. For instance, passing A, C should yield the same as passing C, A.
+You must also insure that the arguments to this method are upper case characters. If either argument is not you should return a -1 from the method;
+It is best to use the Character.isUpperCase method see below.
+You are allowed to use one decision (or two conditional statements) before the for loop to set the order of the characters.
+You are allowed to use one decision before the for loop to determine the case of the characters.
+You are allowed to use one decision inside the for loop to determine if the character is a vowel or consonant.
+The order of the arguments must be taken care of prior to the beginning of the loop.
+What not to do
+Using any of the following will drop your grade for this assignment by 70%
+field variables
+console in sumConsonants function
+console out in sumConsonants function
+Note:
+A char really is nothing more than an integer value. It is a short int value in between 0 and 255. What is different is how it is treated. Since you want to add a char to an int you will want to cast it:
+char c = 'A';
+int x = (int) c;
+x now has the value of 65
+ 
+isupper function
+   char ch = 'A';  if(Character.isUpperCase(ch))    System.out.println("Upper Case"); 
+ 
+Getting Input
+As you have probably have noticed getting a single character from input can prove to be quite a challenge. For this assignment you should take input as a string using the nextLine method from the Scanner class then simply taking the first two characters from the String:
+String s = in.nextLine();
+a = s.charAt(0);
+b = s.charAt(1);
+Make sure you don't put spaces on the input between the two characters or you will get an error. If you want to be able to put a space between the characters then you need to use indexes 0 and 2 in the charAt method.
+ 
+Your program should look like the following:
