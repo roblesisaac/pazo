@@ -9,45 +9,33 @@ package lab11;
 import java.util.Scanner;
 import java.lang.*;
 
-
-
 public class Lab11 {
-
- Scanner in = new Scanner(System.in);
+  Scanner in = new Scanner(System.in);
  
- public int sumConsonants() {
-     
-     System.out.println("Enter two uppercase leters.");
-     
-     String s = in.nextLine();
-     char letter1 = s.charAt(0);
-     char letter2 = s.charAt(1);
-   // int x = Integer.parseInt(s); // converts string into int
-    int l1 = (int)letter1;
-    int l2 = (int)letter2;
-    
-    if(!Character.isUpperCase(letter1) || !Character.isUpperCase(letter2)) {
-        System.out.println("You must enter an uppercase letter.");
-        }
-     else  {
-         return (l1 + l2); // sum of ascii letters
-    }
-    
-    return sumConsonants();
- }
-     
- public static void main(String[] args) {
-        
-        Lab11 console = new Lab11();
-        int x = console.sumConsonants();
-        System.out.println("The sum of the consonants is " + x);
-        
-    }
-    
-}
+  //** try to keep your code tight like this **
+  public int sumConsonants() {
+    System.out.println("Enter two uppercase leters.");
+    String s = in .nextLine();
+    char letter1 = s.charAt(0);
+    char letter2 = s.charAt(1);
+    int l1 = (int) letter1;
+    int l2 = (int) letter2;
 
-    System.out.println("The sum of the consonants is " + x);
+    if (!Character.isUpperCase(letter1) || !Character.isUpperCase(letter2)) {
+      return -1; // i think this is what he means by return -1
+    } else {
+     int loopCount = 0; // set this to the absolute value of the difference of l1 and l2 - Math.abs()
+     // then create loop i<loopCount
+      return (l1 + l2); // sum of ascii letters
+    }
 
+    // return sumConsonants(); shouldn't need this
   }
+
+  public static void main(String[] args) {
+    Lab11 console = new Lab11();
+    int x = console.sumConsonants();
+    System.out.println("The sum of the consonants is " + x);
+  } // i got rid of the extra System.out.println("The sum of the consonants is " + x);
 
 }
