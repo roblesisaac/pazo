@@ -25,11 +25,11 @@ public class Lab11 { //had to define the method with int
    // so you need to find the amount of times to loop which will be the difference between l1 and l2.
    // the result must be positive - i think you could use Math.abs ??
    // I think thats the point of his instructions here: Your method must allow for either argument to be larger. For instance, passing A, C should yield the same as passing C, A.
-  // ** then **
+   // ** then **
    //You must also insure that the arguments to this method are upper case characters. If either argument is not you should return a -1 from the method;
    // if(Character.isUpperCase(ch)) then you would return System.out.println("Upper Case");
    
-   return (l1 + l2); // sum of ascii letters
+    return (l1 + l2); // sum of ascii letters
   }
   
   public static void main(String[] args) {
