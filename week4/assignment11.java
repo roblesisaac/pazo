@@ -12,7 +12,6 @@ import java.lang.*;
 public class Lab11 {
   Scanner in = new Scanner(System.in);
  
-  //** try to keep your code tight like this **
   public int sumConsonants() {
     System.out.println("Enter two uppercase leters.");
     String s = in .nextLine();
@@ -22,20 +21,25 @@ public class Lab11 {
     int l2 = (int) letter2;
 
     if (!Character.isUpperCase(letter1) || !Character.isUpperCase(letter2)) {
-      return -1; // i think this is what he means by return -1
+      return -1;
     } else {
-     int loopCount = 0; // set this to the absolute value of the difference of l1 and l2 - Math.abs()
-     // then create loop i<loopCount
-      return (l1 + l2); // sum of ascii letters
+      // define your low and high letters
+      // use an if statement to figure out which l1 or l2 is higher or lower
+      // set your sum to 0
+      // creat for loop with i starting at low and finishing once i <= high
+      for() {
+        // set var cChar converting i to char with (char) i
+        // use if statement to figure out if cChar is AEIO or U
+        // if its not equal add i to sum
+      }
+      return sum;
     }
-
-    // return sumConsonants(); shouldn't need this
   }
 
   public static void main(String[] args) {
     Lab11 console = new Lab11();
     int x = console.sumConsonants();
     System.out.println("The sum of the consonants is " + x);
-  } // i got rid of the extra System.out.println("The sum of the consonants is " + x);
+  }
 
 }
