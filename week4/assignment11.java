@@ -20,7 +20,10 @@ public class Lab11 { //had to define the method with int
     char letter2 = s.charAt(1);
     int l1 = (int)letter1;
     int l2 = (int)letter2;
-    return (l1 + l2); // sum of ascii letters
+   // Your method must allow for either argument to be larger. For instance, passing A, C should yield the same as passing C, A.
+   // You must also insure that the arguments to this method are upper case characters. If either argument is not you should return a -1 from the method;
+   
+   return (l1 + l2); // sum of ascii letters
   }
   
   public static void main(String[] args) {
