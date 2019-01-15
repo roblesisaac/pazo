@@ -17,7 +17,7 @@ public class Journal1c
        nickels = in.nextInt();
         
        int dollars = nickels / 20;
-       int change = nickels % 20;
+       int change = (nickels % 20)*5;
       
                
        System.out.println("You have $" + dollars + "." + change);
