@@ -9,10 +9,7 @@ package journal1c;
 import java.util.Scanner;
 public class Journal1c 
 {
-
-    
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
        Scanner in = new Scanner(System.in);
        int nickels;
        
