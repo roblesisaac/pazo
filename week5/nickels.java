@@ -11,17 +11,17 @@ public class Journal1c
 {
     public static void main(String[] args) {
        Scanner in = new Scanner(System.in);
-       int nickels;
+         // prompt user for input of coin amount
+       System.out.print("Enter amount of pennies: ");
+       int numberOfPennies = in.nextInt();
        
-       System.out.println("Enter your Nickels");
-       nickels = in.nextInt();
-        
-       int dollars = nickels / 20;
-       int change = (nickels % 20)*5;
-      
-               
-       System.out.println("You have $" + dollars + "." + change);
-        
+      // split pennies
+       int dollarAmount = numberOfPennies/ 100;
+       int changeAmount = numberOfPennies % 100;
+       
+       
+        //display final output       
+       System.out.printf("$ %,3d.%02d %n", dollarAmount, changeAmount);
     }
     
 }
