@@ -19,24 +19,27 @@ public class Journal2A {
         
         int smallest = 0;
         int largest = 0;
-        int first = 0;
+        int valuesEqual =0;
         int second = 0;
        
         //setting conditons for if statement
         if(firstGreaterThanSecond)
+
         {
             smallest = secondValue;
             largest = firstValue;
         }
-        
+        else if(valuesNotEqual)
+        {
+           valuesEqual = firstValue = secondValue;               
+        }
         else
+
         {
             smallest = firstValue;
-            largest = secondValue;
-        }            
-               
-        System.out.println( smallest + " is the smallest number");
+            largest = secondValue;   
+        }        
         
-        
-     }    
+         System.out.println(smallest + valuesEqual);
+    }    
 }
