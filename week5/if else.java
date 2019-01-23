@@ -1,3 +1,7 @@
+package journal2a;
+
+import java.util.Scanner;
+
 public class Journal2A {
 
      public static void main(String[] args) 
@@ -5,36 +9,23 @@ public class Journal2A {
         Scanner in = new Scanner(System.in);
         
         //ask user for input with scanner object
-        System.out.println("Enter two values : ");
+        System.out.println("Enter two values");
         int firstValue = in.nextInt();
         int secondValue = in.nextInt();
         
-        //declaring boolean 
-        boolean firstGreaterThanSecond = firstValue > secondValue;
-        boolean valuesNotEqual = firstValue != secondValue;
-        
-        int smallest, largest, first, second;
-       
         //setting conditons for if statement
-        if(firstGreaterThanSecond)
+        if((firstValue > secondValue))
         {
-            smallest = secondValue;
-            largest = firstValue;
+            System.out.println(" Your first value is greater than your second value");
         }
-        else if(valuesNotEqual)
+        else if((firstValue != secondValue))
         {
-           first = secondValue;
-           second = firstValue;
+            System.out.println("your first value is not euqal to your second");
         }
-         
         else
         {
-            smallest = firstValue;
-            largest = secondValue;
-        }            
-               
-        System.out.println( smallest + "is the smallest number");
-        System.out.println( first + "is not equal to your second value");
+            System.out.println("Your frist value is equal to your second value");
+        }
         
      }    
 }
