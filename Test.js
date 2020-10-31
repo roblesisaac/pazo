@@ -872,26 +872,8 @@ function addMethodToArray(name, fn) {
                                 }
                                 return objArray;
                             }
-                            if (!String.prototype.includes) {
-                                String.prototype.includes = function() {
-                                    "use strict";
-                                    return String.prototype.indexOf.apply(this, arguments) !== -1;
-                                };
-                            }
-                            if (!String.prototype.excludes) {
-                                String.prototype.excludes = function() {
-                                    "use strict";
-                                    return String.prototype.indexOf.apply(this, arguments) === -1;
-                                };
-                                for (var i = 1; i < array.length; i++) {
-                                    objArray[i - 1] = {};
-                                    for (var k = 0; k < array[0].length && k < array[i].length; k++) {
-                                        var key = array[0][k];
-                                        objArray[i - 1][key] = array[i][k]
-                                    }
-                                }
-                                return objArray;
-                            }
+           
+                        
                             if (!String.prototype.includes) {
                                 String.prototype.includes = function() {
                                     "use strict";
@@ -904,48 +886,7 @@ function addMethodToArray(name, fn) {
                                     return String.prototype.indexOf.apply(this, arguments) === -1;
                                 };
                             }
-                            if (typeof String.prototype.parseFunction != "function") {
-                                String.prototype.parseFunction = function() {
-                                    var funcReg = /function *\(([^()]*)\)[ \n\t]*{(.*)}/gmi;
-                                    var match
-                                for (var i = 1; i < array.length; i++) {
-                                    objArray[i - 1] = {};
-                                    for (var k = 0; k < array[0].length && k < array[i].length; k++) {
-                                        var key = array[0][k];
-                                        objArray[i - 1][key] = array[i][k]
-                                    }
-                                }
-                                return objArray;
-                            }
-                            if (!String.prototype.includes) {
-                                String.prototype.includes = function() {
-                                    "use strict";
-                                    return String.prototype.indexOf.apply(this, arguments) !== -1;
-                                };
-                            }
-                            if (!String.prototype.excludes) {
-                                String.prototype.excludes = function() {
-                                    "use strict";
-                                    return String.prototype.indexOf.apply(this, arguments) === -1;
-                                };
-                            }
-                            if (typeof String.prototype.parseFunction != "function") {
-                                String.prototype.parseFunction = function() {
-                                    var funcReg = /function *\(([^()]*)\)[ \n\t]*{(.*)}/gmi;
-                                    var match = funcReg.exec(this.replace(/\n/g, " "));
-                                    if (match) {
-                                        return new Function(match[1].split(","), match[2]);
-                                    }
-                                    return null;
-                                };
-                            } = funcReg.exec(this.replace(/\n/g, " "));
-                                    if (match) {
-                                        return new Function(match[1].split(","), match[2]);
-                                    }
-                                    return null;
-                                };
-                            }
-                            }
+                            
                             if (typeof String.prototype.parseFunction != "function") {
                                 String.prototype.parseFunction = function() {
                                     var funcReg = /function *\(([^()]*)\)[ \n\t]*{(.*)}/gmi;
